@@ -1,0 +1,91 @@
+
+h1{
+    text-align: center;
+    font-family: 'Pangolin', cursive;
+    font-size: 60px;
+    line-height: 30px;
+}
+h2{
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 4px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+hr{
+    align-content: center;
+    width: 50%;
+}
+form{
+    text-align: center;
+}
+.btn{
+    margin: 0px auto;
+    text-align: center;
+    width: 80px;
+    height: 40px;
+    border: 2px solid #89B2E9;
+    background-color: white;
+    color: #89B2E9;
+    font-size: 15px;
+    font-weight: bolder;
+
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+#ft{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    color: #89B2E9;
+}
+#fs{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    color: #89B2E9;
+}
+#btn2{
+    margin: 0px auto;
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    border: 2px solid #89B2E9;
+    background-color: white;
+    color: #89B2E9;
+    font-size: 15px;
+    font-weight: bolder;
+    
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.tbl{
+    margin: 0px auto;
+}
+.trCl{
+    width: 1000;
+    height: 110px;
+}
+.tdCl{
+    width: 110px;
+    height: 110px;
+    border: 1px solid #89B2E9;
+}
+.cardIMG{
+    
+    width: 120px;
+    height:120px;
+}
+.NOT_VISIBLES{
+    display: none;
+}
+.VISIBLES{
+    display: block;
+}
+.CLOSE{
+    background-color: #89B2E9;
+}
