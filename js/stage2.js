@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>"STAGE2"</title>
-    <link href="st2.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Pangolin&display=swap" rel="stylesheet">
-    <script>
-        var files = ["image/강아지.jpg", "image/비행기.jpg", "image/눈사람.jpg", "image/사과.jpg", "image/자동차.jpg", 
-        "image/시계.jpg", "image/해바라기.jpg", "image/학교.jpg"];       // 기본 8개의 이미지 배열
+var files = ["../image/강아지.jpg", "../image/비행기.jpg", "../image/눈사람.jpg", "../image/사과.jpg", "../image/자동차.jpg", 
+        "../image/시계.jpg", "../image/해바라기.jpg", "../image/학교.jpg"];       // 기본 8개의 이미지 배열
         //var result = ["강아지", "비행기", "눈사람", "사과", "자동차", "시계", "해바라기", "학교"];
 
         var count=0;
@@ -141,7 +133,7 @@
             if(count == files.length)                           // count의 값이 files의 길이와 같을 경우== 이미지를 다 출력했을 경우 == 게임 끝
             {
                 alert(tryGame+"번의 시도 끝에, 2단계를 클리어!\n"+"총 "+score+"점 득점했습니다.");
-                imgObj.src = "image/final.jpg";
+                imgObj.src = "../image/final.jpg";
             }
             else                                                // 이미지가 남아 있는 경우
             {
@@ -205,31 +197,3 @@
 			var fileName = fileNameSplit[0];
             return (fileName);           // 이미명 반환
         }
-    </script>
-</head>
-<body>
-    <!--이미지 추가 선택 및 추가하기 "image/jpg, image/jpeg, image/png"-->
-    <form id="addfo">
-        <input type="file" id="file" accept="image/*" >
-        <input type="button" value="IMG 추가" id="addBtn" onclick="addImg()">
-    </form>
-    <h1>STAGE2</h1>
-    <h2>나는 무엇일까요?</h2>
-    <hr>
-    <form id="fo">
-        <!-- 게임 시작-->
-        <input type="button" id="stBtn" value="START" onclick="startGame2()">
-        <span id="ft">도전 횟수 : <span id='try'> 0 </span></span> 
-        <span id="fs">점수 : <span id='score'> 0 </span></span><br>
-        <!--이미지 -->
-        <img src="image/first.jpg" id="thisImg""><br><br>
-
-        <!--텍스트 입력 -->
-        <input type="text" id="imgName">
-
-        <!--버튼 -->
-        <input type="button" value="확인" id="okBtn" onclick="isCorrect()">
-        
-    </form>
-</body>
-</html>

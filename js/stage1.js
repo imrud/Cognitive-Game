@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>"STAGE1"</title>
-    <link href="st1.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&family=Pangolin&display=swap" rel="stylesheet">
-    <script>
-        var addedCardList="";
+var addedCardList="";
         var CARD_NO_ARR = new Array(16);
 
         var count = 0;
@@ -47,7 +39,7 @@
                     IMG_NAME = IMG_NAME-8
                 }
                 var CARD_IMG_OBJ = document.getElementById("CARD"+(i+1));
-                CARD_IMG_OBJ.src = "image/"+IMG_NAME+".jpg";
+                CARD_IMG_OBJ.src = "../image/"+IMG_NAME+".jpg";
 
                 CARD_IMG_OBJ.success = "N";
 				CARD_IMG_OBJ.className = "cardIMG NOT_VISIBLES";
@@ -181,79 +173,3 @@
                 alert("STAGE1을 클리어하지 못했습니다.\nSTAGE2는 STAGE1 성공 후, 진입가능합니다.");
             }
         }
-
-    </script>
-</head>
-<!--onload="javascript:init()"-->
-<body>
-    <h1>STAGE1</h1>
-    <h2>뒤집어진 그림들 중, 같은 그림을 찾아보세요!</h2>
-    <hr>
-    <!-- 시작 버튼-->
-    <form>
-        <input type="button" value="START" class="btn" id='startBtn' onclick="init()"/>
-        <span id="ft">도전 횟수 : <span id='try'> 0 </span></span> 
-        <span id="fs">점수 : <span id='score'> 0 </span></span>
-        <input type="button" value="GO, STAGE2!" id="btn2" onclick="nextGame()">
-    </form>
-    
-    <table class="tbl" cellspacing="5">
-        <tr class="trCl">
-            <td class="tdCl CLOSE" onclick="clickIMG('1')">
-                <img src="" class="cardIMG NOT_VISIBLES" id="CARD1">
-            </td>
-            <td class="tdCl CLOSE" onclick="clickIMG('2')">
-                <img src="" class="cardIMG NOT_VISIBLES" id="CARD2">
-            </td>
-            <td class="tdCl CLOSE"  onclick="clickIMG('3')">
-                <img src="" class="cardIMG NOT_VISIBLES" id="CARD3">
-            </td>
-            <td class="tdCl CLOSE"  onclick="clickIMG('4')">
-                <img src="" class="cardIMG NOT_VISIBLES" id="CARD4">
-            </td>
-        </tr>
-        <tr class="trCl">
-            <td class="tdCl CLOSE"  onclick="clickIMG('5')">
-                <img src="" class="cardIMG NOT_VISIBLES" id="CARD5">
-            </td>
-            <td class="tdCl CLOSE"  onclick="clickIMG('6')">
-                <img src="" class="cardIMG NOT_VISIBLES" id="CARD6">
-            </td>
-            <td class="tdCl CLOSE"  onclick="clickIMG('7')">
-                <img src="" class="cardIMG NOT_VISIBLES" id="CARD7">
-            </td>
-            <td class="tdCl CLOSE"  onclick="clickIMG('8')">
-                <img src="" class="cardIMG NOT_VISIBLES" id="CARD8">
-            </td>
-        </tr>
-        <tr class="trCl">
-            <td class="tdCl CLOSE"  onclick="clickIMG('9')">
-                <img src="" class="cardIMG NOT_VISIBLES" id="CARD9">
-            </td>
-            <td class="tdCl CLOSE"  onclick="clickIMG('10')">
-                <img src="" class="cardIMG NOT_VISIBLES" id="CARD10">
-            </td>
-            <td class="tdCl CLOSE"  onclick="clickIMG('11')">
-                <img src="" class="cardIMG NOT_VISIBLES" id="CARD11">
-            </td>
-            <td class="tdCl CLOSE"  onclick="clickIMG('12')">
-                <img src="" class="cardIMG NOT_VISIBLES" id="CARD12">
-            </td>
-        </tr>
-        <tr class="trCl">
-            <td class="tdCl CLOSE"  onclick="clickIMG('13')">
-                <img src="" class="cardIMG NOT_VISIBLES" id="CARD13">
-            </td>
-            <td class="tdCl CLOSE"  onclick="clickIMG('14')">
-                <img src="" class="cardIMG NOT_VISIBLES" id="CARD14">
-            </td>
-            <td class="tdCl CLOSE"  onclick="clickIMG('15')">
-                <img src="" class="cardIMG NOT_VISIBLES" id="CARD15">
-            </td>
-            <td class="tdCl CLOSE"  onclick="clickIMG('16')">
-                <img src="" class="cardIMG NOT_VISIBLES" id="CARD16">
-            </td>
-        </tr>
-    </table>
-</body>
-</html>

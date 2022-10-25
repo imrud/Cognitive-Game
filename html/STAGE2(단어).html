@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>"STAGE2"</title>
+    <link href="../css/st2.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Pangolin&display=swap" rel="stylesheet">
+    <script src="../js/stage2.js"></script>
+</head>
+<body>
+    <!--이미지 추가 선택 및 추가하기 "image/jpg, image/jpeg, image/png"-->
+    <form id="addfo">
+        <input type="file" id="file" accept="image/*" >
+        <input type="button" value="IMG 추가" id="addBtn" onclick="addImg()">
+    </form>
+    <h1>STAGE2</h1>
+    <h2>나는 무엇일까요?</h2>
+    <hr>
+    <form id="fo">
+        <!-- 게임 시작-->
+        <input type="button" id="stBtn" value="START" onclick="startGame2()">
+        <span id="ft">도전 횟수 : <span id='try'> 0 </span></span> 
+        <span id="fs">점수 : <span id='score'> 0 </span></span><br>
+        <!--이미지 -->
+        <img src="../image/first.jpg" id="thisImg""><br><br>
+
+        <!--텍스트 입력 -->
+        <input type="text" id="imgName">
+
+        <!--버튼 -->
+        <input type="button" value="확인" id="okBtn" onclick="isCorrect()">
+        
+    </form>
+</body>
+</html>
