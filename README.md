@@ -8,6 +8,8 @@
 * STAGE1: 같은 그림 맞추기
 * STAGE 2: 나는 누구일까요? (이미지 연상게임)
 
+#### 📝수정사항
+2022-10-25 : html, css, js 분리
 <br/>
 <!--
 ![1](https://user-images.githubusercontent.com/87274087/197387109-7c90c3ef-e7c9-4394-8655-f0b571bc2fe2.png)
