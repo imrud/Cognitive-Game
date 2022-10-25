@@ -9,7 +9,7 @@
 * STAGE 2: 나는 누구일까요? (이미지 연상게임)
 
 <br/>
-
+<!--
 ![1](https://user-images.githubusercontent.com/87274087/197387109-7c90c3ef-e7c9-4394-8655-f0b571bc2fe2.png)
 <br/>
 ![2](https://user-images.githubusercontent.com/87274087/197387110-d7b8e679-da43-439a-a493-e972b8ae6a6a.png)
@@ -31,3 +31,4 @@
 ![10](https://user-images.githubusercontent.com/87274087/197387120-a2fa06aa-a347-4e19-bc86-4014be7d7d8e.png)
 <br/>
 ![11](https://user-images.githubusercontent.com/87274087/197387121-69b82bf5-50e2-4cfc-b565-36d33e5f45cc.png)
+-->
